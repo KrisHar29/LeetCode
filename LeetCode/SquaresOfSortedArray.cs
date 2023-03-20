@@ -33,13 +33,12 @@ namespace LeetCode
 
         public int[] SortedSquares(int[] nums)
         {
-            int[] squared = new int[nums.Length];
             for (int i = 0; i < nums.Length; i++)
             {
                 nums[i] = nums[i] * nums[i];
             }
-            squared = nums.OrderBy(x => x).ToArray();
-            return squared;
+            nums = nums.OrderBy(x => x).ToArray();
+            return nums;
         }
     }
 }
