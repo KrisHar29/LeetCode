@@ -15,9 +15,6 @@ namespace LeetCode
 
     //A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
 
-
-
-
     //Example 1:
 
     //Input: accounts = [[1, 2, 3], [3,2,1]]
@@ -39,7 +36,6 @@ namespace LeetCode
 
     //Input: accounts = [[2,8,7],[7,1,3],[1,9,5]]
     //Output: 17
-
 
     //Constraints:
 
