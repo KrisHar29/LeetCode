@@ -16,6 +16,8 @@
 //int[] nums = { 0, 1, 0, 3, 12 };
 //Solution283.MoveZeroes(nums);
 
+int[] arr = { 1, 5, 8, 5, 1, 8, 8, 7, 4, 4, 10 };
+int result = FirstRecurringNumber.FirstRecurring(arr);
 
 Console.ReadLine();
 
