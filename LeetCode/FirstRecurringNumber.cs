@@ -26,6 +26,8 @@ namespace LeetCode
             //=== using a hashtable ===
             // but this has the difference of
             // 1st recurring character "seen"
+            // a nested for loop would be time 0(n^2) wheras hashtable is 0(n)
+            // space complexity is 0(1) and 0(n)
             Hashtable h = new Hashtable();
             for (int i = 0; i < numberList.Length; i++)
             {
