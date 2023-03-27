@@ -41,8 +41,8 @@ namespace LeetCode
         //Follow up: Could you optimize your algorithm to use only
         //O(rowIndex) extra space?
 
-        public static IList<int> GetRow(int rowIndex)
-        {
+        //public static IList<int> GetRow(int rowIndex)
+        //{
             //IList<IList<int>> output = new List<IList<int>>();
             //output.Add(new List<int> { 1 });
             //if (rowIndex == 0) return output[0];
@@ -63,28 +63,28 @@ namespace LeetCode
             //}
             //return output[rowIndex];
 
-            IList<int> currentRow = new List<int>();
-            IList<int> previousRow = new List<int>();
-            for (int i = 0; i <= rowIndex; i++)
-            {
-                for (int j = 0; j <= i; j++)
-                {
-                    if (j == 0 || j == i)
-                    {
-                        currentRow.Add(1);
-                    }
-                    else
-                    {
-                        currentRow.Add(previousRow[j - 1] + previousRow[j]);
-                    }
-                }
-                if (i == rowIndex)
-                {
-                    return currentRow;
-                }
-                previousRow = currentRow;
-                currentRow = new List<int>();
-            }
-        }
+            //IList<int> currentRow = new List<int>();
+            //IList<int> previousRow = new List<int>();
+            //for (int i = 0; i <= rowIndex; i++)
+            //{
+            //    for (int j = 0; j <= i; j++)
+            //    {
+            //        if (j == 0 || j == i)
+            //        {
+            //            currentRow.Add(1);
+            //        }
+            //        else
+            //        {
+            //            currentRow.Add(previousRow[j - 1] + previousRow[j]);
+            //        }
+            //    }
+            //    if (i == rowIndex)
+            //    {
+            //        return currentRow;
+            //    }
+            //    previousRow = currentRow;
+            //    currentRow = new List<int>();
+            //}
+        //}
     }
 }

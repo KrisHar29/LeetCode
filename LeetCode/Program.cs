@@ -19,6 +19,10 @@
 //int[] arr = { 1, 5, 8, 5, 1, 8, 8, 7, 4, 4, 10 };
 //int result = FirstRecurringNumber.FirstRecurring(arr);
 
+string num = "1210";
+bool test = Solution2283.DigitCount(num);
+Console.WriteLine(test);
+
 Console.ReadLine();
 
 
