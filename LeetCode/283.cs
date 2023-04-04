@@ -37,24 +37,34 @@ namespace LeetCode
 
         public static void MoveZeroes(int[] nums)
         {
-            for (int i = 0; i < nums.Length; i++)
+            //for (int i = 0; i < nums.Length; i++)
+            //{
+            //    if (nums[i] == 0 && nums.Length > 1) 
+            //    {
+            //        for (int j = i; j < nums.Length; j++)
+            //        {
+
+            //            if (nums.Length - 1 == j)
+            //            {
+            //                nums[j] = 0;
+            //            }
+            //            else
+            //            {
+            //                nums[j] = nums[j + 1]; 
+            //            }
+            //        }
+            //    }
+
+            //}
+
+            for (int lastNoneZeroAt = 0, currentLoc = 0; currentLoc < nums.Length; currentLoc++)
             {
-                if (nums[i] == 0 && nums.Length > 1) 
+                if (nums[currentLoc] != 0)
                 {
-                    for (int j = i; j < nums.Length; j++)
-                    {
-                        
-                        if (nums.Length - 1 == j)
-                        {
-                            nums[j] = 0;
-                        }
-                        else
-                        {
-                            nums[j] = nums[j + 1]; 
-                        }
-                    }
+                    int temp = nums[lastNoneZeroAt];
+                    nums[lastNoneZeroAt++] = nums[currentLoc];
+                    nums[currentLoc] = temp;
                 }
-                
             }
         }
 
